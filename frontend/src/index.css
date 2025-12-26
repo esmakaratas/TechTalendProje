@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Ana renkler - Siyah & Altın Teması */
+  --primary: #d4a574;
+  --primary-dark: #b8956a;
+  --primary-light: #e8c49a;
+  --secondary: #c9a227;
+  --accent: #ffd700;
+  --gold: #d4af37;
+  --gold-light: #f4d03f;
+  --gold-dark: #aa8c2c;
+  
+  /* Nötr renkler - Beyaz Tema */
+  --bg-dark: #ffffff;
+  --bg-card: #f8f9fa;
+  --bg-input: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #888888;
+  --border: #e0e0e0;
+  
+  /* Efektler */
+  --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  --glow: 0 0 40px rgba(212, 175, 55, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dark);
+}
+
+/* Selection */
+::selection {
+  background: var(--gold);
+  color: var(--bg-dark);
+}
