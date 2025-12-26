@@ -50,8 +50,9 @@ desktop.ini
 *.temp
 .cache/
 
-# PDF files (antetli kağıt - kullanıcı kendi dosyasını eklemeli)
+# PDF files (antetli kağıt hariç)
 *.pdf
+!antetlikagit.pdf
 !antetlikagit.pdf.example
 
 # Puppeteer
